@@ -6,14 +6,17 @@
     <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <style>
+      body {
+        margin: 0;
+      }
       .mainHeader {
         height: 54px;
       }
-      .subHeader {
+      .subHeaderAndFooter {
         background-color: #222629;
         padding: 18px 80px 18px 80px;
       }
-      .subHeader span {
+      .subHeaderAndFooter span {
         font-family: Helvetica;
         font-weight: bold;
         color: white;
@@ -23,6 +26,12 @@
       }
       .header span {
         padding-right: 40px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
       }
     </style>
 </head>
@@ -47,7 +56,7 @@
     const SubHeader = React.createClass({
       render: function() {
         return (
-          <div className="subHeader header">
+          <div className="subHeaderAndFooter header">
             <span>FIND PROJECTS</span>
             <span>MY PROJECTS</span>
             <span>PROFILE</span>
@@ -66,7 +75,14 @@
     });
     const Footer = React.createClass({
       render: function() {
-        return <div>Footer</div>;
+        return (
+          <div className="subHeaderAndFooter footer">
+            <span>HELP . </span>
+            <span>BLOG . </span>
+            <span>TWITTER . </span>
+            <span>TERMS & RISKS</span>
+          </div>
+        );
       }
     });
     const MainController = React.createClass({
