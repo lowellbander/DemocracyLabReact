@@ -8,6 +8,7 @@
     <style>
       body {
         margin: 0;
+        font-family: Helvetica;
       }
       .mainHeader {
         height: 54px;
@@ -17,7 +18,6 @@
         padding: 18px 80px 18px 80px;
       }
       .subHeaderAndFooter span {
-        font-family: Helvetica;
         font-weight: bold;
         color: white;
       }
@@ -32,6 +32,22 @@
         bottom: 0;
         text-align: center;
         width: 100%;
+      }
+      .landingText {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        width: 469px;
+      }
+      .supremeCourtBanner {
+        background-image: url(https://c1.staticflickr.com/9/8335/28612636244_8f15312bc9_b.jpg);
+        background-size: cover;
+        display: flex;
+        height: 427px;
+        justify-content: center;
+      }
+      .landingTextContainer {
+        margin-top: 110px;
       }
     </style>
 </head>
@@ -70,7 +86,20 @@
     });
     const HomeController = React.createClass({
       render: function() {
-        return <div>Home Controller</div>;
+        return (
+          <div>
+            <div className="supremeCourtBanner">
+              <div className="landingTextContainer">
+                <p className="landingText">
+                  Use your skills to make a difference and change the world,
+                  one project at a time.
+                </p>
+                <p className="landingText">{"LET\'S GET STARTED."}</p>
+                <button className="landingText">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        );
       }
     });
     const Footer = React.createClass({
