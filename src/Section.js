@@ -1,5 +1,6 @@
 const Section = {
-  Home: 'Home'
+  FindProjects: 'FindProjects',
+  Home: 'Home',
 };
 
 export default Section;

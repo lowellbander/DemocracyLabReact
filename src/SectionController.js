@@ -1,3 +1,4 @@
+import FindProjectsController  from './FindProjectsController.js'
 import HomeController from './HomeController.js'
 import React, {Component} from 'react';
 import Section from './Section.js'
@@ -12,10 +13,11 @@ class SectionController extends Component {
   }
 
   _getController() {
-    console.log(this)
     switch (this.props.section) {
       case Section.Home:
         return <HomeController />;
+      case Section.FindProjects:
+        return <FindProjectsController />;
       default:
         return <div>Unknown section: {this.props.section}</div>
     }
