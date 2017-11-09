@@ -1,0 +1,10 @@
+.Footer-root {
+  background-color: #222629;
+  bottom: 0;
+  color: white;
+  font-weight: bold;
+  padding: 18px 80px 18px 80px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
