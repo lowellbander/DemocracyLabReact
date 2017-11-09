@@ -11,7 +11,7 @@ class HomeController extends Component {
               Use your skills to make a difference and change the world,
               one project at a time.
             </p>
-            <p className="HomeController-landingText">{"LET\'S GET STARTED."}</p>
+            <p className="HomeController-landingText">{"LET'S GET STARTED."}</p>
             <button className="HomeController-landingText">Sign Up</button>
           </div>
         </div>

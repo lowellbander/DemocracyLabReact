@@ -1,8 +1,10 @@
 import Footer from './Footer.js'
+import SectionController from './SectionController.js'
 import HomeController from './HomeController.js'
 import './MainHeader.css'
 import MainHeader from './MainHeader.js'
 import React, {Component} from 'react';
+import Section from './Section.js'
 import SubHeader from './SubHeader.js'
 
 class MainController extends Component {
@@ -11,7 +13,7 @@ class MainController extends Component {
       <div className='MainController-root'>
         <MainHeader />
         <SubHeader />
-        <HomeController />
+        <SectionController section={Section.Home}/>
         <Footer />
       </div>
     );
